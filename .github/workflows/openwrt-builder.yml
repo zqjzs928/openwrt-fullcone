@@ -77,8 +77,8 @@ jobs:
 
     - name: Compile Firmware
       run: |
-        cd openwrt
-        make -j$(nproc) V=s || make -j1 V=s
+       cd openwrt
+       make -j$(nproc) V=s
 
     - name: Collect Firmware
       run: |
